@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  app:
+    image: node:18
+    ports:
+      - "3006:3006"
+    environment:
+      - MAPBOX_ACCESS_TOKEN=${MAPBOX_ACCESS_TOKEN}
+    command: npm run dev
+    volumes:
+      - .:/app
+    working_dir: /app
+
+  puppeteer-integration-tests:
+    image: node:18
+    depends_on:
+      - app
+    volumes:
+      - .:/app
+      - ./test-results:/app/test-results
+    working_dir: /app
+    environment:
+      - APP_URL=http://app:3006
+    command: npm run test:integration

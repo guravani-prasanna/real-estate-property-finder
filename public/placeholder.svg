@@ -1,0 +1,10 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" rx="32" fill="#0f172a"/>
+  <g opacity="0.9">
+    <path d="M120 440C120 340 220 240 320 240C420 240 520 340 520 440" stroke="#818cf8" stroke-width="24" stroke-linecap="round"/>
+    <path d="M230 240L200 180L320 104L440 180L410 240" stroke="#c084fc" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M400 420H160C147.163 420 137 409.837 137 397V312C137 299.163 147.163 289 160 289H400C412.837 289 423 299.163 423 312V397C423 409.837 412.837 420 400 420Z" stroke="#a5b4fc" stroke-width="20"/>
+  </g>
+  <text x="50%" y="78%" text-anchor="middle" fill="#cbd5e1" font-size="32" font-family="Inter, sans-serif">Property preview</text>
+  <text x="50%" y="88%" text-anchor="middle" fill="#94a3b8" font-size="18" font-family="Inter, sans-serif">Local placeholder image</text>
+</svg>
